@@ -46,8 +46,9 @@ Neste capítulo, a interação passou para o terminal:
 
 ### 🛠 Prática
 
+-**Calculadora simples:** Uma introdução rápida de calculadora
+
 - **Cálculo de Revenda:** Lógica para cálculo de entrada (50%) e parcelamento de veículos.
 - **Consumo de Ração:** Cálculo de duração de um saco de ração em dias e a sobra exata em gramas.
-
 
 _Estudante: Giovanny Reizon_
