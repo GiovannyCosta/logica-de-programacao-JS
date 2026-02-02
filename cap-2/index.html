@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Módulo 2 - Exercícios</title>
+</head>
+
+<body>
+
+    <h1 class="topTitle">Exercicios de estudo</h1>
+    <main class="container">
+
+        <!-- exercicios de exemplos -->
+        <section class="card">
+            <h2>Saudação Personalizada</h2>
+            <form id="formSaudacao">
+                <div class="input-group">
+                    <label for="inputNome">Nome:</label>
+                    <input type="text" id="inputNome" required>
+                </div>
+                <button type="submit">Mostrar</button>
+            </form>
+            <output id="respSaudacao" class="resultado"></output>
+        </section>
+
+        <section class="card">
+            <h2>Cine Alinas</h2>
+            <form id="formCinema">
+                <div class="input-group">
+                    <label for="inputTitulo">Título do Filme:</label>
+                    <input type="text" id="inputTitulo" required>
+                </div>
+                <div class="input-group">
+                    <label for="inputDuracao">Duração (min):</label>
+                    <input type="number" id="inputDuracao" required>
+                </div>
+                <button type="submit">Converter</button>
+            </form>
+            <div class="resultado">
+                <h3 id="respCinemaTitulo"></h3>
+                <p id="respCinemaTempo"></p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Revendas Alinas</h2>
+            <form id="formVeiculo">
+                <div class="input-group">
+                    <label for="inputVeiculo">Veículo:</label>
+                    <input type="text" id="inputVeiculo" required>
+                </div>
+                <div class="input-group">
+                    <label for="inputPreco">Preço R$:</label>
+                    <input type="number" step="0.01" id="inputPreco" required>
+                </div>
+                <button type="submit">Ver Promoção</button>
+            </form>
+            <div class="resultado">
+                <h3 id="respVeiculoNome"></h3>
+                <p id="respVeiculoEntrada"></p>
+                <p id="respVeiculoParcela"></p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Restaurante Buffet</h2>
+            <form id="formBuffet">
+                <div class="input-group">
+                    <label for="inputPrecoKg">Preço por Quilo:</label>
+                    <input type="number" step="0.01" id="inputPrecoKg" required>
+                </div>
+                <div class="input-group">
+                    <label for="inputConsumo">Consumo (gr):</label>
+                    <input type="number" id="inputConsumo" required>
+                </div>
+                <button type="submit">Calcular Preço</button>
+            </form>
+            <output id="respBuffet" class="resultado"></output>
+        </section>
+        <!-- End: exercicios de exemplos -->
+
+        <!-- Exercicios de fixação -->
+        <section class="card">
+            <h2>Farmácia Alinas</h2>
+            <form id="formFarmacia">
+                <div class="input-group">
+                    <label for="inputMedicamento">Medicamento:</label>
+                    <input type="text" id="inputMedicamento" required>
+                </div>
+                <div class="input-group">
+                    <label for="inputPrecoMed">Preço R$:</label>
+                    <input type="number" step="0.01" id="inputPrecoMed" required>
+                </div>
+                <button type="submit">Mostrar Promoção</button>
+            </form>
+            <div class="resultado">
+                <h3 id="respMedicamento"></h3>
+                <p id="respPrecoMed"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
