@@ -32,6 +32,22 @@ Os exercícios de fixação foram implementados na pasta `/cap-2`.
 
 | Exercícios do livro | Exercícios de fixação |
 | ------------------- | --------------------- |
-| `/form`             | `/exCap2`              |
+| `/form`             | `/exCap2`             |
+
+---
+
+## 📂 Capítulo 3: Node.js e Entrada de Dados (Terminal)
+
+Neste capítulo, a interação passou para o terminal:
+
+- **Integração Node.js:** Uso da biblioteca `prompt-sync` para entrada de dados.
+- **Lógica de Backend:** Processamento de dados sem interface gráfica.
+- **Operadores Matemáticos:** Uso do operador de resto (`%`) para calcular sobras e `Math.floor()` para contagem de dias inteiros.
+
+### 🛠 Prática
+
+- **Cálculo de Revenda:** Lógica para cálculo de entrada (50%) e parcelamento de veículos.
+- **Consumo de Ração:** Cálculo de duração de um saco de ração em dias e a sobra exata em gramas.
+
 
 _Estudante: Giovanny Reizon_
