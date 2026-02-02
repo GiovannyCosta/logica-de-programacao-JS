@@ -17,4 +17,21 @@ Os exercícios de fixação foram implementados no ficheiro `exCap1.js`.
 
 ---
 
+## 📂 Capítulo 2: Integração com HTML (DOM)
+
+Neste capítulo, o foco foi a interação com o navegador:
+
+- **Manipulação do DOM:** Uso de `document.querySelector` e `innerText`.
+- **Eventos:** Escuta de formulários com `addEventListener("submit", ...)`.
+- **Métodos Math:** Aplicação de `Math.floor`, `Math.ceil` e arredondamentos.
+- **Formatação:** Uso de `toFixed(2)` e `toLocaleString` para moedas.
+
+### 🛠 Prática
+
+Os exercícios de fixação foram implementados na pasta `/cap-2`.
+
+| Exercícios do livro | Exercícios de fixação |
+| ------------------- | --------------------- |
+| `/form`             | `/exCap2`              |
+
 _Estudante: Giovanny Reizon_
