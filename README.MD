@@ -28,27 +28,38 @@ Neste capítulo, o foco foi a interação com o navegador:
 
 ### 🛠 Prática
 
+O arquivo `exercicios.js` controla a lógica da página `index.html`:
+
+1.  **Cine Alinas:** Conversão de minutos em Horas e Minutos.
+2.  **Revenda de Veículos:** Cálculo de entrada (50%) e parcelamento.
+3.  **Farmácia:** Promoção "Leve 2" com arredondamento de valores
+
 Os exercícios de fixação foram implementados na pasta `/cap-2`.
 
 | Exercícios do livro | Exercícios de fixação |
 | ------------------- | --------------------- |
-| `/form`             | `/exCap2`             |
+| `/exercicios`       | `/exCap2`             |
 
 ---
 
 ## 📂 Capítulo 3: Node.js e Entrada de Dados (Terminal)
 
 Neste capítulo, a interação passou para o terminal:
+Transição do navegador para o ambiente backend (terminal).
 
-- **Integração Node.js:** Uso da biblioteca `prompt-sync` para entrada de dados.
-- **Lógica de Backend:** Processamento de dados sem interface gráfica.
-- **Operadores Matemáticos:** Uso do operador de resto (`%`) para calcular sobras e `Math.floor()` para contagem de dias inteiros.
+- **Ferramentas:** Uso da biblioteca `prompt-sync` para interação.
+- **Lógica:** Resolução de problemas sem interface gráfica.
+- **Conceitos:**
+  - Conversão de tipos (`Number()`).
+  - Operador Módulo (`%`) para calcular restos.
+  - `Math.floor()` para divisões inteiras.
 
 ### 🛠 Prática
 
--**Calculadora simples:** Uma introdução rápida de calculadora
+Os exercícios de fixação foram implementados no ficheiro `cap-3/exercicios.js`.
 
 - **Cálculo de Revenda:** Lógica para cálculo de entrada (50%) e parcelamento de veículos.
 - **Consumo de Ração:** Cálculo de duração de um saco de ração em dias e a sobra exata em gramas.
+- **Calculadora simples:** Uma introdução rápida de calculadora
 
 _Estudante: Giovanny Reizon_
