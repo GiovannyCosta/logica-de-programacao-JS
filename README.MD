@@ -62,4 +62,18 @@ Os exercícios de fixação foram implementados no ficheiro `cap-3/exercicios.js
 - **Consumo de Ração:** Cálculo de duração de um saco de ração em dias e a sobra exata em gramas.
 - **Calculadora simples:** Uma introdução rápida de calculadora
 
+---
+
+## 📂 Capítulo 4: Estruturas Condicionais (If/Else)
+Introdução à tomada de decisão no código.
+- **Estruturas:** `if`, `else if`, `else` e `switch`.
+- **Operadores Lógicos:** `&&` (E), `||` (OU), `!` (NÃO).
+### estilo
+- **Estilização Dinâmica:** Alteração de cor (`style.color`) baseada na condição (Aprovado/Reprovado).
+
+### 🛠 Prática
+- **Situação do Aluno:** Sistema que verifica média e define status (Aprovado/Recuperação/Reprovado).
+- **Calculadora Node:** Uso de `switch` para selecionar operações matemáticas (+, -, *, /).
+- **Exercícios Rápidos:** Verificação de Par/Ímpar e Fuso Horário.
+
 _Estudante: Giovanny Reizon_

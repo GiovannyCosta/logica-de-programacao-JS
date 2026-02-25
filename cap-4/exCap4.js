@@ -23,7 +23,6 @@ if (velocidade > 80) {
 
 // 3. FUSO HORÁRIO
 // Leia a hora no Brasil e exiba a hora na França (+5h).
-// Atenção: Se passar de 24h, deve reiniciar.
 console.log("\n--- 3. Hora na França ---");
 const horaBrasil = Number(prompt("Hora no Brasil: "));
 let horaFranca = horaBrasil + 5;
@@ -41,4 +40,18 @@ if (Number.isInteger(raiz)) {
   console.log(`Raiz: ${raiz}`);
 } else {
   console.log(`Não há raiz exata para ${numRaiz}`);
+}
+
+// 5. LADOS DE UM TRIANGULO
+// Leia 3 lados e diga se é um isosceles, equilátero ou escaleno.
+console.log("\n--- 5. Triângulo ---");
+const lado1 = Number(prompt("Lado 1: "));
+const lado2 = Number(prompt("Lado 2: "));
+const lado3 = Number(prompt("Lado 3: "));
+if (lado1 == lado2 && lado2 == lado3) {
+  console.log("Tipo: Equilátero");
+} else if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3) {
+  console.log("Tipo: Isosceles");
+} else {
+  console.log("Tipo: Escaleno");
 }

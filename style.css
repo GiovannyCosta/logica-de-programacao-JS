@@ -1,0 +1,158 @@
+/* Definindo a sua paleta de cores nas variáveis do CSS */
+:root {
+  --bg-app: #d0f4f7;
+  --bg-panel: #eafdfc;
+  --white: #ffffff;
+  --black: #0f1020;
+  --item-checked: #69b578;
+  --item-pending: #f56476;
+  --text-primary: #5a6a7e;
+  --text-secondary: #8ba0b3;
+  --accent-pink: #ffc8dd;
+  --accent-yellow: #fff4bd;
+  --accent-blue: #a2d2ff;
+}
+
+/* Estilos Globais */
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.topTitle {
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+/* Container principal usando Grid para organizar os cards lado a lado */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo Base dos Cards */
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  /* Borda superior colorida para dar um charme usando uma das cores de destaque */
+  border-top: 6px solid var(--accent-blue);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover:not(.form-aluno) {
+  transform: translateY(-5px);
+}
+
+/* Brincando com as cores da paleta no topo de cada card */
+.card:nth-child(2) {
+  border-top-color: var(--accent-pink);
+}
+.card:nth-child(3) {
+  border-top-color: var(--accent-yellow);
+}
+.card:nth-child(4) {
+  border-top-color: var(--item-checked);
+}
+.card:nth-child(5) {
+  border-top-color: var(--item-pending);
+}
+
+.card h2 {
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+/* Estilização do Formulário */
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--text-secondary);
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: var(--bg-panel);
+  color: var(--black);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(162, 210, 255, 0.3);
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--accent-blue);
+  color: var(--black);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition:
+    background-color 0.3s,
+    transform 0.1s;
+}
+
+button:hover {
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Área de Resultados */
+.resultado {
+  margin-top: auto; /* Empurra o resultado para o final do card */
+  padding: 15px;
+  background-color: var(--bg-panel);
+  border-radius: 8px;
+  border-left: 4px solid var(--item-checked);
+  min-height: 24px;
+  display: block;
+}
+
+.resultado h3 {
+  margin: 0 0 8px 0;
+  color: var(--black);
+  font-size: 1.1rem;
+}
+
+.resultado p {
+  margin: 0;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
