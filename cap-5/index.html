@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Módulo 2 - Exercícios</title>
+    <title>Capítulo 5 - Estruturas de Repetição</title>
 </head>
 
 <body>
 
-    <h1 class="topTitle">Exercicios de estudo</h1>
+    <h1 class="topTitle">Capítulo 5: Loops e Repetições</h1>
     <main class="container">
 
-        <!-- exercicios de exemplos -->
         <section class="card">
             <h2>Números Decrescentes</h2>
             <form id="formDecrescente">
                 <div class="input-group">
-                    <label for="inputdecrescente">Número:</label>
-                    <input type="text" id="inputdecrescente" required>
+                    <label for="inputdecrescente">Número Inicial:</label>
+                    <input type="number" id="inputdecrescente" required>
                 </div>
-                <button type="submit">decrescer</button>
+                <button type="submit">Decrescer</button>
             </form>
             <output id="respDecrescente" class="resultado"></output>
         </section>
@@ -31,23 +30,54 @@
             <form id="formTabuada">
                 <div class="input-group">
                     <label for="inputTabuada">Número:</label>
-                    <input type="text" id="inputTabuada" required>
+                    <input type="number" id="inputTabuada" required>
                 </div>
-                <button type="submit">Mostrar Tabuada</button>
+                <button type="submit">Ver Tabuada</button>
             </form>
             <output id="respTabuada" class="resultado"></output>
         </section>
 
         <section class="card">
-            <h2>Pares</h2>
+            <h2>Números Pares</h2>
             <form id="formPares">
                 <div class="input-group">
-                    <label for="inputPares">Número:</label>
-                    <input type="text" id="inputPares" required>
+                    <label for="inputPares">Número Limite:</label>
+                    <input type="number" id="inputPares" required>
                 </div>
                 <button type="submit">Mostrar Pares</button>
             </form>
             <output id="respPares" class="resultado"></output>
+        </section>
+
+        <section class="card">
+            <h2>Contas do Mês</h2>
+            <form id="formContas">
+                <div class="input-group">
+                    <label for="inputDescricao">Descrição:</label>
+                    <input type="text" id="inputDescricao" required>
+                </div>
+                <div class="input-group">
+                    <label for="inputValorConta">Valor R$:</label>
+                    <input type="number" step="0.01" id="inputValorConta" required>
+                </div>
+                <button type="submit">Registrar Conta</button>
+            </form>
+            <div class="input-group-result">
+                <output id="respContas" class="resultado res-contas"></output>
+                <output id="respValorTotal" class="resultado res-contas" style="font-weight: bold;"></output>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Fábrica de Estrelas</h2>
+            <form id="formEstrelas">
+                <div class="input-group">
+                    <label for="inputEstrelas">Número de Símbolos:</label>
+                    <input type="number" id="inputEstrelas" required>
+                </div>
+                <button type="submit">Criar</button>
+            </form>
+            <output id="respEstrelas" class="resultado res-estrelas"></output>
         </section>
 
     </main>

@@ -1,73 +1,54 @@
-// tipos dee laços de repetição
+//   CAPÍTULO 5: ESTRUTURAS DE REPETIÇÃO (LOOPS)
 
-// 1. FOR
-// 2. WHILE
-// 3. DO-WHILE
-
-// 1. FOR
-// Ideal quando o número de repetições é conhecido
+// 1. FOR (PARA)
 // ----------------------------------------------------------
+// Ideal quando o número de repetições é conhecido (ex: contar até 10, percorrer um array).
+// Sintaxe: for (inicialização; condição; incremento) { ... }
 for (let i = 0; i < 10; i++) {
-  console.log(i);
+  console.log(`Número: ${i}`);
 }
 
-// 2. WHILE
-// Executa enquanto a condição for verdadeira
-// Ideal quando o número de repetições é desconhecido
-// por ser feito um teste bo inicio, pode ser que que os comandos nunca sejam executados
+// 2. WHILE (ENQUANTO)
 // ----------------------------------------------------------
-let i = 0;
-while (i < 10) {
-  console.log(i);
-  i++;
+// Ideal quando o número de repetições é desconhecido.
+// O teste é feito no INÍCIO. Se a condição for falsa de cara, ele nem executa.
+let contador = 0;
+while (contador < 10) {
+  console.log(contador);
+  contador++;
 }
 
-// 3. DO-WHILE
-// Garante pelo menos uma execução
-// Ideal quando o número de repetições é desconhecido
-// a verificação ocorre depois da primeira execução - no final do bloco
+// 3. DO-WHILE (FAÇA... ENQUANTO)
 // ----------------------------------------------------------
+// Garante pelo menos UMA execução, pois o teste é feito no FINAL.
+// Útil para menus ou validações onde o usuário precisa digitar algo pelo menos uma vez.
 let j = 0;
 do {
   console.log(j);
   j++;
 } while (j < 10);
 
-// - NaN
-// Not a Number
-// Quando um valor recebido é diferente de um number ele retorna NaN
-const num = Number("não é um número");
-console.log(num);
-// saída = NaN
-
+// 4. CONCEITOS IMPORTANTES
 // ----------------------------------------------------------
-// - BREAK
-// - CONTINUE
-// As linguagens dispoem de dois comandos especiais para o controle de fluxo em laços de repetição
-// servindo paras auxiliar no controle de execução dos comandos do loop
+// NaN (Not a Number):
+// Retornado quando uma operação matemática falha (ex: multiplicar texto por número).
+console.log(Number("texto")); // Saída: NaN
 
+// CONTADORES vs ACUMULADORES:
+// - Contador: Incrementa um valor fixo (ex: i++ ou i = i + 1). Conta quantas vezes algo ocorreu.
+// - Acumulador: Soma valores variáveis (ex: total += preco). Soma saldos, notas, etc.
+
+// 5. CONTROLE DE FLUXO (BREAK / CONTINUE)
 // ----------------------------------------------------------
+// break: Interrompe e SAI do laço imediatamente.
+// continue: Pula a iteração atual e vai para a próxima verificação.
 
-// while (condition_1) {
-//  COMANDOS
-//   if (condition_2) {
-//     continue; o comando faz com que a condição continue sendo testada, se VERDADEIRO, continua a execução
+// Exemplo de estrutura:
+// while (condicao) {
+//   if (algo_especifico) {
+//     continue; // Volta para o teste do while
 //   }
-// COMANDOS2
-//   if (condition_3) {
-//     break; o comando faz com que o programa saia do laço de repetição.
+//   if (erro_grave) {
+//     break; // Sai do while
 //   }
-
 // }
-
-// ----------------------------------------------------------
-// Contadores e acumuladores
-// o uso de contadores e acumuladores em um programa permite a exibição de contagens e totalizaçãoes
-// Possuindo duas características:
-// º A variavel contadora ou acumulador deve ser iniciada com o valor atribuido (geralmente 0).
-// º A variavel contadora ou acumulador deve receber ela mesma mais algum valor a cada execução.
-// A diferença entre contadores e acumuladores e que o primeiro recebe o valor atribuido e o segundo recebe o valor da variavel mais algum valor a cada execução
-// ex:
-// let soma = 0; // acumulador - deve ser declarado com let
-// soma = soma + 5; // contadora - em uma repetição irá acumular ele mesmo com o valor de 5
-// simplificação += -= *= /=
