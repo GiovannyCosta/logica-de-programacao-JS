@@ -156,3 +156,21 @@ button:active {
   color: var(--text-primary);
   line-height: 1.4;
 }
+
+.input-group-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.res-contas {
+  margin-top: auto;
+  padding: 15px;
+  color: var(--black);
+  border-radius: 0px !important;
+  border-left: none !important;
+  min-height: 30px;
+  display: block;
+}
+.res-estrelas {
+  word-wrap: break-word;
+}

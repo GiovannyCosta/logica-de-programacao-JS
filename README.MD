@@ -65,15 +65,63 @@ Os exercícios de fixação foram implementados no ficheiro `cap-3/exercicios.js
 ---
 
 ## 📂 Capítulo 4: Estruturas Condicionais (If/Else)
+
 Introdução à tomada de decisão no código.
+
 - **Estruturas:** `if`, `else if`, `else` e `switch`.
 - **Operadores Lógicos:** `&&` (E), `||` (OU), `!` (NÃO).
+
 ### estilo
+
 - **Estilização Dinâmica:** Alteração de cor (`style.color`) baseada na condição (Aprovado/Reprovado).
 
 ### 🛠 Prática
+
 - **Situação do Aluno:** Sistema que verifica média e define status (Aprovado/Recuperação/Reprovado).
-- **Calculadora Node:** Uso de `switch` para selecionar operações matemáticas (+, -, *, /).
+- **Calculadora Node:** Uso de `switch` para selecionar operações matemáticas (+, -, \*, /).
 - **Exercícios Rápidos:** Verificação de Par/Ímpar e Fuso Horário.
 
-_Estudante: Giovanny Reizon_
+---
+
+## 📂 Capítulo 5: Estruturas de Repetição (Loops)
+
+Neste capítulo, o foco foi a automação de tarefas repetitivas e o controle de fluxo de execução, tanto no navegador quanto no terminal.
+
+- **Laços de Repetição:**
+  - `for`: Ideal para quando o número de repetições é conhecido (ex: tabuadas).
+  - `while`: Teste lógico no início, usado quando não sabemos quantas vezes repetir.
+  - `do-while`: Teste lógico no final, garantindo pelo menos uma execução (útil para validações).
+- **Controle de Fluxo:** Uso de `break` para interromper laços e `continue` para pular iterações.
+- **Lógica de Dados:**
+  - **Acumuladores:** Variáveis que somam valores (ex: total de contas a pagar).
+  - **Contadores:** Variáveis que incrementam passos (ex: número de itens).
+  - **Validação:** Tratamento de entradas inválidas (`isNaN`) e loops infinitos controlados.
+
+### 🛠 Prática
+
+A pasta `/cap-5` foi organizada separando a lógica de interface (DOM) dos scripts de backend (Node.js):
+
+#### 🌐 Navegador (DOM)
+
+O arquivo `conceitos.js` controla a interatividade da página `index.html`:
+
+1.  **Tabuada Dinâmica:** Gera a tabuada completa de qualquer número.
+2.  **Contas do Mês:** Sistema que acumula valores inseridos e exibe o montante total (uso de acumuladores).
+3.  **Fábrica de Estrelas:** Criação de padrões visuais alternando caracteres com lógica par/ímpar.
+4.  **Números Decrescentes:** Uso de laço `for` reverso (`i--`).
+
+#### 🖥️ Terminal (Node.js)
+
+Os arquivos `nodeConceitos.js` e `excCap5.js` focam na lógica pura:
+
+1.  **Criação de Chinchilas:** Cálculo de progressão geométrica (população triplicando) com validação de entrada via `do-while`.
+2.  **Anos de Copa:** Verificador que ignora anos específicos (Segunda Guerra) usando lógica condicional dentro do loop.
+3.  **Verificador de Primos:** Algoritmo de força bruta para identificar números primos.
+4.  **Repetição de Caracteres:** Uso de `process.stdout.write` para saídas na mesma linha.
+
+| Arquivo            | Descrição                                          |
+| :----------------- | :------------------------------------------------- |
+| `teoria.js`        | Base teórica e sintaxe das estruturas.             |
+| `conceitos.js`     | Exercícios visuais integrados ao HTML.             |
+| `nodeConceitos.js` | Exemplos rápidos de lógica no terminal.            |
+| `excCap5.js`       | Resolução dos desafios finais do capítulo (Livro). |

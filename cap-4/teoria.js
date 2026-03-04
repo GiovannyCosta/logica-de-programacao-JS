@@ -35,6 +35,18 @@ if (temIngresso && idade >= censura) {
   console.log("Barrado");
 }
 
+// 3. CONDICIONAL TERNÁRIO
+// ----------------------------------------------------------
+// uma forma abreviada de if/else
+// realiza uma atribuição para uma variável de acordo com uma condição
+
+const idadeAtual = 18;
+const podeBeber = idadeAtual >= 18 ? "Pode beber" : "Nao pode beber";
+// a condição () é inserida após o =
+// o primeiro valor é atribuido após o ? se a condição for VERDADEIRA
+// o segundo valor é atribuido depois do : se a condição for FALSA
+console.log(podeBeber);
+
 // 4. SWITCH CASE (MÚLTIPLAS ESCOLHAS)
 // ----------------------------------------------------------
 // Ideal para quando você tem valores exatos (ex: Menu de opções)
