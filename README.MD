@@ -1,6 +1,30 @@
-# Lógica de Programação e Algoritmos com JavaScript
+# 💻 Lógica de Programação e Algoritmos com JavaScript
 
-Repositório dedicado aos estudos e resolução de exercícios do livro **"Lógica de Programação e Algoritmos com JavaScript - 2ª Edição"**, de Edécio Fernando Iepsen.
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+Repositório dedicado aos estudos de lógica e resolução de exercícios na linguagem javascript, usando como principal base o livro **"Lógica de Programação e Algoritmos com JavaScript - 2ª Edição"**, de Edécio Fernando Iepsen.
+
+## 🚀 Área de Uso e Dependências
+
+Este projeto foi construído para explorar a lógica de programação em dois ambientes distintos de execução do JavaScript:
+
+- **Ambiente Web (Navegador):** Exercícios que envolvem a manipulação do DOM e a criação de interfaces interativas utilizando HTML e CSS.
+- **Ambiente de Terminal (Backend):** Algoritmos focados em lógica pura executados localmente através do Node.js.
+
+### 📦 Dependências
+
+- **[Node.js](https://nodejs.org/)**: Necessário para rodar os scripts pelo terminal.
+- **[prompt-sync](https://www.npmjs.com/package/prompt-sync)**: Biblioteca utilizada para permitir e capturar a entrada de dados do utilizador diretamente no terminal durante a execução dos ficheiros via Node.js.
+
+**Instalação:**
+Para testares os ficheiros de terminal localmente, navega até à pasta do projeto e instala as dependências utilizando o comando:
+
+```bash
+npm install
+```
 
 ## 📂 Capítulo 1: Introdução
 
@@ -125,3 +149,9 @@ Os arquivos `nodeConceitos.js` e `excCap5.js` focam na lógica pura:
 | `conceitos.js`     | Exercícios visuais integrados ao HTML.             |
 | `nodeConceitos.js` | Exemplos rápidos de lógica no terminal.            |
 | `excCap5.js`       | Resolução dos desafios finais do capítulo (Livro). |
+
+---
+
+<p align="center">
+    Desenvolvido com dedicação por <strong>Giovanny Reizon</strong>.
+</p>
