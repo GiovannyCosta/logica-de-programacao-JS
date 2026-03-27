@@ -1,4 +1,6 @@
 //   CAPÍTULO 1: FUNDAMENTOS E ENTRADA DE DADOS
+// bonus: tofixed
+// bonus: prompt-sync
 
 // 1. VARIÁVEIS E TIPAGEM DINÂMICA
 // ----------------------------------------------------------
@@ -35,6 +37,8 @@ console.log(`Olá, ${nome}!`); // Template String (uso de crase ` `)
 
 const nomeString = "Mundo";
 const saudacao = "Olá, " + nomeString + "!";
+console.log(saudacao);
+
 // Saída: Olá, Mundo!
 
 // Template strings são delimitadas por acentos graves (`)
@@ -42,3 +46,9 @@ const saudacao = "Olá, " + nomeString + "!";
 const nomeTemplate = "Mundo";
 const saudacaoTemplate = `Olá, ${nomeTemplate}!`; // Mais limpo e fácil de ler
 // Saída: Olá, Mundo!
+
+// Tofixed(valor de casas): Arredonda para n casas decimais
+
+const num = 3.14159;
+console.log("valor arredondado: ");
+console.log(num.toFixed(2)); // 3.14

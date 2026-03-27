@@ -24,7 +24,7 @@ const prompt = require("prompt-sync")();
 // definir o preço para cada 15 minutos
 // quebrar em blocos de 15 em 15 e multiplicar pelo preço por quinzena
 const valorRequerido = Number(prompt("Digite o tempo que deseja (min): "));
-const valorPorQuinzeMin = 2;
+const valorPorQuinzeMin = 2; // R$
 let pagar = (valorRequerido / 15) * valorPorQuinzeMin;
 console.log("Valor a pagar: R$" + pagar.toFixed(2));
 
@@ -34,7 +34,5 @@ const valorProduto = Number(prompt("Digite o valor deste produto: "));
 const Promocao = valorProduto * 0.5;
 console.log("PRODUTO:  " + nomeProduto.padStart(15));
 console.log("VALOR:    " + String(valorProduto).padStart(15));
-console.log(
-  "PROMOÇÃO - TERCEIRO PRODUTO POR: " + String(Promocao).padStart(15),
-);
+console.log("PROMOÇÃO - TERCEIRO PRODUTO POR: " + String(Promocao).padStart(15));
 console.log("==============");
