@@ -1,12 +1,12 @@
 /* Definindo a sua paleta de cores nas variáveis do CSS */
 :root {
-  --bg-app: #d0f4f7;
+  --bg-app: #00171f;
   --bg-panel: #eafdfc;
   --white: #ffffff;
   --black: #0f1020;
   --item-checked: #69b578;
   --item-pending: #f56476;
-  --text-primary: #5a6a7e;
+  --text-primary: #00171f;
   --text-secondary: #8ba0b3;
   --accent-pink: #ffc8dd;
   --accent-yellow: #fff4bd;
@@ -24,7 +24,7 @@ body {
 
 .topTitle {
   text-align: center;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 40px;
   font-size: 2.5rem;
 }

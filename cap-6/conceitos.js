@@ -70,6 +70,10 @@ cidades.forEach((cidade, index) => {
   // primeiro argumento recebe o valor de cada item do array
   // segundo argumento recebe o indice de cada item do array'
   console.log(`Cidade ${index + 1}: ${cidade}`);
+  // Cidade 1: Rio de Janeiro
+  // Cidade 2: Sao Paulo
+  // Cidade 3: Salvador
+  // Cidade 4: Belo Horizonte
 });
 
 // operações com vetores
