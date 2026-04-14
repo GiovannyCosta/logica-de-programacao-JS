@@ -174,3 +174,8 @@ button:active {
 .res-estrelas {
   word-wrap: break-word;
 }
+#pacienteAtendimento {
+  color: var(--item-checked);
+  font-weight: bold;
+  font-size: 1.1rem;
+}

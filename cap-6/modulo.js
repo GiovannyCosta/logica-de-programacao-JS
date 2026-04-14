@@ -21,7 +21,7 @@ formPacientes.addEventListener("submit", (e) => {
 });
 
 formPacientes.btnUrgente.addEventListener("click", () => {
-  if (!formPacientes.checkVisibility()) {
+  if (formPacientes.inputOdonto.value.trim() === "") {
     alert("Informe um paciente a ser atendido em caráter de urgência!");
     formPacientes.inputOdonto.focus();
     return;
@@ -38,6 +38,18 @@ formPacientes.btnUrgente.addEventListener("click", () => {
 });
 
 formPacientes.btnAtender.addEventListener("click", () => {
-  const paciente = pacientesFila.shift();
-  respPacientes.innerText = pacientesFila.join("\n");
+  if (pacientesFila.length == 0) {
+    atendimento.innerText = "Fila vazia!";
+  } else {
+    const paciente = pacientesFila.shift();
+
+    atendimento.innerText = paciente;
+
+    let lista = "";
+    pacientesFila.forEach((paciente, i) => {
+      lista += `${i + 1}. ${paciente}\n`;
+    });
+    respPacientes.innerText = lista;
+  }
+  console.log(pacientesFila);
 });

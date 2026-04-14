@@ -83,3 +83,26 @@ numeros2.forEach((num) => {
   soma += num;
 });
 console.log(`Soma dos números: ${soma}`); // Soma dos números: 15
+
+// localizar conteúdo
+
+// existem métodos dispostos que auxiliam na localização de conteúdo em vetores
+// um desses métodos refere-se à verificação de presença de um elemento em um vetor:
+
+// indexOf
+// retorna o indice do primeiro elemento encontrado no vetor ou -1 se o elemento nao for encontrado
+const numeros3 = [1, 2, 3, 4, 5];
+console.log(numeros3.indexOf(3)); // 2
+console.log(numeros3.indexOf(6)); // -1
+
+// lastIndexOf
+// retorna o indice do ultimo elemento encontrado no vetor ou -1 se o elemento nao for encontrado
+const numeros4 = [1, 2, 3, 4, 5];
+console.log(numeros4.lastIndexOf(3)); // 2
+console.log(numeros4.lastIndexOf(6)); // -1
+
+// includes
+// retorna true se o elemento for encontrado no vetor ou false se o elemento nao for encontrado
+const numeros5 = [1, 2, 3, 4, 5];
+console.log(numeros5.includes(3)); // true
+console.log(numeros5.includes(6)); // false
