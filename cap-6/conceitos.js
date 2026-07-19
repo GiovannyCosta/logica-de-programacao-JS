@@ -106,3 +106,48 @@ console.log(numeros4.lastIndexOf(6)); // -1
 const numeros5 = [1, 2, 3, 4, 5];
 console.log(numeros5.includes(3)); // true
 console.log(numeros5.includes(6)); // false
+
+// vetores de objetos
+
+// um vetor de objetos pode conter uma lista de nomes ou dee números,
+//além de poder definir um vetor com uma lista de objetos, com alguns atributos desse objeto.
+// exemplos:
+
+// inicia-se um vetor vazio
+const carros = [];
+
+// adiciona elementos ao vetor
+// vetores de objetos são identificados pelos colchetes {}
+// e seus atributos sao identificados após o :
+// logo em seguida o conteúdo
+carros.push({ modelo: "BMW", ano: 2020 });
+carros.push({ modelo: "Audi", ano: 2021 });
+carros.push({ modelo: "Mercedes", ano: 2022 });
+
+carros.forEach((carro) => {
+  console.log(`Modelo: ${carro.modelo}, Ano: ${carro.ano}`);
+  // Modelo: BMW, Ano: 2020
+  // Modelo: Audi, Ano: 2021
+  // Modelo: Mercedes, Ano: 2022
+});
+
+// rest e spread operator
+// uma das possibilidades do js é a utilizacao de rest e spread operator
+// para atribuir um valor à variavel atraves deles
+// exemplo:
+
+for (const carro of carros) {
+  const { modelo, ano } = carro; // desestruturacao do objeto em modelo e ano
+  console.log(`Modelo: ${modelo}, Ano: ${ano}`);
+  // Modelo: BMW, Ano: 2020
+  // Modelo: Audi, Ano: 2021
+  // Modelo: Mercedes, Ano: 2022
+}
+
+//rest: recebe o resto dos argumentos
+//spread: copia os argumentos
+const pacientes = ["Ana", "Larissa", "Paulo", "Pedro"];
+const [atender, espera, ...resto] = pacientes;
+console.log(atender); // Ana
+console.log(espera); // Larissa
+console.log(resto); // [ 'Paulo', 'Pedro' ]

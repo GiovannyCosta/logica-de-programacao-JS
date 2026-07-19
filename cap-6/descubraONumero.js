@@ -9,7 +9,7 @@ function initGame() {
   console.log("Dica: é um número entre 1 e 100");
   console.log(random);
 
-  while (!pWin == true && numErros.length < numChances) {
+  while (!pWin == true && numChances > 0) {
     const tentativa = Number(prompt("Tente adivinhar o número: "));
 
     if (tentativa == random) {
@@ -21,14 +21,15 @@ function initGame() {
         console.log(`Erros: ${numErros}`);
       } else {
         numErros.push(tentativa);
-        console.log(`Ainda faltam ${numChances} tentativas`);
         numChances--;
+
         console.log(`Erros: ${numErros}`);
 
         if (numChances === 0) {
           console.log("Você perdeu!");
           pWin = true;
         } else {
+          console.log(`Ainda faltam ${numChances} tentativas`);
           const dica = tentativa > random ? "MENOR" : "MAIOR";
           console.log(`Dica: O número sorteado é ${dica} que ${tentativa}.`);
         }
@@ -36,5 +37,4 @@ function initGame() {
     }
   }
 }
-
 initGame();
